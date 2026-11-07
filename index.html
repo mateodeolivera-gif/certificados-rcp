@@ -43,7 +43,7 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
-body { background: var(--menta); color: var(--texto); font-family: var(--cuerpo); font-size: 1rem; line-height: 1.5; }
+body { margin: 0; background: var(--menta); color: var(--texto); font-family: var(--cuerpo); font-size: 1rem; line-height: 1.5; }
 
 .banda { background: var(--banda); color: var(--banda-texto); position: relative; overflow: hidden; }
 .banda::after { content: "+"; position: absolute; right: -0.15em; top: -0.42em; font: 800 22rem/1 var(--display); color: #fff; opacity: 0.07; pointer-events: none; }
@@ -55,7 +55,7 @@ h1 { font: 800 clamp(2rem, 8vw, 2.7rem)/1.02 var(--display); letter-spacing: -0.
 .sub { margin: 0; font-weight: 500; opacity: 0.92; }
 .curita { width: clamp(6.5rem, 26vw, 9rem); height: auto; align-self: end; margin-bottom: -4.6rem; filter: drop-shadow(0 6px 10px rgba(0,0,0,0.18)); }
 
-main { max-width: 34rem; margin: -2.5rem auto 0; padding-block: 0 2.5rem; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); position: relative; z-index: 2; display: grid; gap: 1rem; }
+main { max-width: 34rem; margin: -2.5rem auto 0; padding-block: 0 2.5rem; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
 .tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 1.6rem; padding: 1.5rem 1.25rem; box-shadow: 0 10px 30px -18px rgba(23,64,43,0.45); }
 label { display: block; font: 800 1.25rem/1.2 var(--display); margin-bottom: 0.35rem; }
 .ayuda { margin: 0 0 1rem; color: var(--texto-suave); font-size: 0.95rem; }
